@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- SPAN : IT only takes required amount of width/space ,Inline Tag -->
+
+    <span style="background-color: blueviolet;">
+        Login
+    </span>
+
+    <p>This is a span Tag<span style="background-color: bisque;">HTML- </span>    </p>
+
+    <button><span>Cart 1</span></button>
+
+    
+</body>
+</html>
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <select>
+
+        <option>Kenya</option>
+        <option>Ghana</option>
+        <option >India</option>
+        <option label="">South Africa</option>
+        <option disabled>USA</option>
+        <option label="UK">United Kingdom</option>
+        <option selected>Country</option>
+
+    </select>
+</body>
+</html>
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- Input : To take the Input/Data From The user -->
+
+    <label>FullName:</label>
+    <input type="text" placeholder="Enter your name"> <br><br>
+
+    <label>Email:</label>
+    <input type="email" placeholder="Enter your email"><br><br>
+
+    <label>Password:</label>
+    <input type="password" placeholder="Enter your password"><br><br>
+
+    <label>Age:</label>
+    <input type="number" placeholder="Enter your age"><br><br>
+
+    <label>Resume:</label>
+    <input type="file"><br><br>
+
+    <label>Hobbies</label>
+    <input type="checkbox">Reading
+    <input type="checkbox">Gym
+    <input type="checkbox">Coding
+    <br><br>
+
+
+    <textarea  rows="10" cols="25" placeholder="Write your thoughts"></textarea>
+</body>
+</html>
