@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ 
+
+</head>
+<body>
+    <!-- header -->
+     <header>
+        <h1>Future Web 2025</h1>
+        <p>Global Tech conferences for web developer</p>
+     </header>
+
+     <nav>
+        <a href="#about">About</a>
+        <a href="#anything">Speakers</a>
+        <a href="#register">Register</a>
+     </nav>
+
+
+    <!-- main -->
+     <main>
+
+       <section id="about">
+        <h2>About The Events</h2>
+        <p>join us for 5 days Event Feturing Top Speaker in Ai,FullStack and Cloud</p>
+         <video controls  autoplay muted loop   height="500" width="800">
+         <source src="https://www.pexels.com/download/video/14058813/" type="video/mp4"   >
+         </video>
+       </section>
+
+       <section id="anything">
+          <h2>Speakers Voice</h2>
+          <article>
+            <h2>Mark - AI research</h2>
+            <p>Exploring future of AI</p>
+          </article>
+
+           <article>
+            <h2>Mohit - FullStack</h2>
+            <p>Exploring future of Website</p>
+          </article>
+
+
+       </section>
+
+       <h2>Event Audio</h2>
+       <audio controls>
+        <source src="./a6-82015.mp3" type="audio/mp3">
+       </audio>
+
+
+
+     </main>
+
+    <footer>
+        <p> &copy; 2025 Future web Conferenece  </p>
+    </footer>
+
+    <!-- footer -->
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- INLINE CSS: IT IS TO ADD STYLING IN HTML , IN THE SAME TAG OR LINE
+     using style attribute
+
+    -->
+
+    <h1 style="color: red;  background-color: yellow;">Hello This is Getting styled</h1>
+
+    <p style="text-align: center; color: brown; ">Hello This is me without styl</p>
+
+    <p>This is an example of Inline css</p>
+
+</body>
+</html>
+
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+ 
+ h1{
+    text-align: center;
+    color: blue;
+ }
+
+ div{
+    border: 1px solid black;
+    width: 500px;
+    text-align: center;
+    color: red;
+ }
+
+
+</style>
+
+</head>
+<body>
+    <h1>Internal Css - Style tag</h1>
+
+    <div>
+        <h2>Web Developer</h2>
+        <img src="data:image/jpeg;base64,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">
+        <p>John</p>
+    </div>
+
+    <p>HII GUYS I AM FROM INTERNAL CSS</p>
+</body>
+</html>
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- relation -->
+</head>
+<body>
+    <h1>External Css - Sperate file</h1>
+    <p>Hii i am styled with external css</p>
+</body>
+</html>
+
+
+
+
+p{
+    text-align: center;
+    background-color: burlywood;
+    font-family: cursive;
+    font-size: 24px;
+    color: white;
+}
+
+h1{
+    background-color: blueviolet;
+    text-align: center;
+}

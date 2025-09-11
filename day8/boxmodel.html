@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+           font-family: Arial, Helvetica, sans-serif;
+           background-color: antiquewhite;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+        }
+
+        .product{
+            border: 2px solid brown;
+            width: 300px;
+            overflow: hidden;
+            margin: 30px;
+            text-align: center;
+            color: red;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px black;
+        }
+
+        img{
+            width: 100%;
+            object-fit: cover;
+            height: 300px;
+        }
+
+        button{
+            background-color: orange;
+            padding: 15px;
+            border: none;
+            border-radius: 15px;
+            color: white;
+            cursor: pointer;
+        }
+
+        .product:hover{
+          
+            background-color:peru;
+            transform: scale(1.02);
+
+        }
+
+       
+    </style>
+</head>
+<body>
+     <!-- content : Any content measn text or img
+     padding : SPace between(inside) the content and border
+     margin : space outside the border
+     border : surronding from all direction -->
+
+
+    <div class="product">
+        <img src="https://images.unsplash.com/photo-1523206489230-c012c64b2b48?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHBob25lfGVufDB8fDB8fHww">
+        <h2>Iphone</h2>
+        <p>$50</p>
+        <button>Add To Cart</button>
+    </div>
+
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1644426059269-36535c7c00fc?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjF8fG5pa2UlMjBzaG9lc3xlbnwwfHwwfHx8MA%3D%3D">
+        <h2>Nike Shoes</h2>
+        <p>$25</p>
+        <button>Add To Cart</button>
+    </div>
+
+
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8aGVhZHBob25lfGVufDB8fDB8fHww">
+        <h2>Headphone</h2>
+        <p>$20</p>
+        <button>Add To Cart</button>
+    </div>
+</body>
+</html>
