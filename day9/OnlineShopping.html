@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: cursive;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 40px;
+        }
+
+        h2{
+            text-align: center;
+            color: #222;
+            margin-bottom: 30px;
+        }
+
+        .parent{
+            display: grid;
+            grid-template-columns:repeat(auto-fit, minmax(250px,1fr));
+            gap:30px;
+            padding: 10px;
+
+        }
+
+
+        .product{
+            background-color: white;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 4px 8px black;
+            overflow: hidden;
+            transition: transform  0.4s;
+        }
+
+        .product:hover{
+            transform: scale(1.04);
+            background-color: lightgoldenrodyellow;
+        }
+
+
+
+        .product img {
+            object-fit: cover;
+            width: 100%;
+            height: 200px;
+        }
+
+
+        .product p {
+            color: #777;
+            font-size: 14px;
+            margin: 15px;
+        }
+
+        .product button{
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 7px;
+            cursor: pointer;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+
+         <div class="product">
+        <img src="https://images.unsplash.com/photo-1523206489230-c012c64b2b48?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHBob25lfGVufDB8fDB8fHww">
+        <h2>Iphone</h2>
+        <p>$50</p>
+        <button>Add To Cart</button>
+    </div>
+
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1644426059269-36535c7c00fc?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjF8fG5pa2UlMjBzaG9lc3xlbnwwfHwwfHx8MA%3D%3D">
+        <h2>Nike Shoes</h2>
+        <p>$25</p>
+        <button>Add To Cart</button>
+     </div>
+
+
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8aGVhZHBob25lfGVufDB8fDB8fHww">
+        <h2>Headphone</h2>
+        <p>$20</p>
+        <button>Add To Cart</button>
+     </div>
+
+
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8aGVhZHBob25lfGVufDB8fDB8fHww">
+        <h2>Headphone</h2>
+        <p>$20</p>
+        <button>Add To Cart</button>
+     </div>
+
+
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8aGVhZHBob25lfGVufDB8fDB8fHww">
+        <h2>Headphone</h2>
+        <p>$20</p>
+        <button>Add To Cart</button>
+     </div>
+
+
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8aGVhZHBob25lfGVufDB8fDB8fHww">
+        <h2>Headphone</h2>
+        <p>$20</p>
+        <button>Add To Cart</button>
+     </div>
+
+    </div>
+</body>
+</html>

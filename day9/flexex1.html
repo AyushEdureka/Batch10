@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .product{
+            display: flex;  /*Default display direction is row */
+            /* flex-direction: column; */
+            justify-content: center;
+            gap: 30px;
+            align-items: center;
+            height: 300px;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+
+
+
+      .box{
+        border: 1px solid black;
+        width: 100px;
+        height: 100px;
+        padding: 10px;
+        text-align: center;
+        font-weight: bold;
+        font-style: italic;
+        background-color: beige;
+      }
+
+      .box:hover{
+        transform: scale(1.06);
+      }
+    </style>
+</head>
+<body>
+    <!-- Flex Gives display in 1 Dimensional - either Row or column -->
+<div class="product">
+    <div class="box">Cake.🎂</div>
+    <div class="box">Cookie.🍪</div>
+    <div class="box">Pastry.🥐</div>
+</div>
+
+</body>
+</html>
