@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @media screen and (min-width:320px) and (max-width:480px){
+
+            body{
+                background-color: blue;
+                color: white;
+            }
+            
+        }
+/* 
+         ipad or tablet */
+           @media screen and (min-width:481px) and (max-width:768px){
+
+            body{
+                background-color: red;
+                font-family: cursive;
+                font-size: 25px;
+                color: white;
+
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Response Webiste</h1>
+    <p><strong>Note:</strong>- @media Tag help up to achive responsiveness of
+    the website</p>
+</body>
+</html>
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-style: italic;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        header{
+            background-color: crimson;
+            color: white;
+            padding: 2em;
+        }
+
+        nav ul{
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 10px;
+        }
+
+        li a{
+            text-decoration: none;
+            color: white;
+        }
+
+        main {
+            padding: 1em;
+        }
+
+        footer{
+            background-color: burlywood;
+            color: #fff;
+            padding: 1em;
+        }
+
+        @media (max-width:600px){
+            
+            nav ul li{
+                display: block;
+                margin: 10px;
+            }
+
+            main {
+                background-color: lightblue;
+                padding: 0.5em;
+            }
+
+        }
+
+
+          @media  (min-width:601px) and  (max-width:800px){
+            
+          
+
+            main {
+                background-color: lightblue;
+                padding: 0.5em;
+            }
+
+            header,footer{
+                background-color: lightpink;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Personal Page</h1>
+        <nav>
+            <ul type="none">
+                <li><a href="#Home">Home</a></li>
+                 <li><a href="#Home">About</a></li>
+                  <li><a href="#Home">Blog</a></li>
+                   <li><a href="#Home">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <h2>Welcome to My Blog</h2>
+            <p>This is a Sample Blog! - Reszie
+                the Screen to see the effect
+            </p>
+        </article>
+    </main>
+
+
+    <footer>
+        <p>&copy; 2025 My Personal Blog</p>
+    </footer>
+</body>
+</html>
