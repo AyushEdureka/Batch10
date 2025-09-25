@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <script>
+        console.log("Hii I am from Head")
+    </script> -->
+</head>
+<body>
+    
+
+
+    <script>
+         //Print on Webpage
+         //doucment= webpage
+
+         document.write("Hii I am From Body on webpage")
+
+
+         console.log("Hii I am from Body")
+
+
+         //Variable - IT IS USED TO STORE DATA
+
+         //1. var  VariableName = Value ("Text" or 2352)
+
+         //Disadvantage - Value can be updated by using same Varibale Name
+
+         var customer1 = "Sandra"
+
+         console.log(customer1)
+
+         var BillNo = 12345
+
+         var BillNo = 999866
+
+         console.log(BillNo)
+
+
+
+         //2. let - Keyword : Cannot Use Same Variable Name
+
+         let course = "FullStack"
+
+         let course = "Data Science"
+
+         console.log(course)
+    //Error - We are using same Varibale Name ,Kindly Change it and run the code
+
+
+       // 3. const - Keyword : CONSTANT MEANS YOU CANNOT CHANGE DATA AT ALL
+
+         const deliveryCharge = 20
+
+        console.log(deliveryCharge) 
+
+
+    </script>
+</body>
+</html>
