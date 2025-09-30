@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     
+   <script>
+    
+    //Conditional 
+
+    // if(condition) : IF will only give the output when the condition is TRUE
+
+    // let age =11
+
+
+    // if(age>18){
+    //     //If Part
+    //      alert("Eligible")  
+    //      console.log("Eligible ")
+    // }
+
+    
+    //If-Else
+    //if- True and else-False
+
+
+    // let age =11
+
+    // if(age>18){
+    //     //If Part
+    //      alert("Eligible")  
+    //      console.log("Eligible ")
+    // }else{
+  
+    //     alert("Not Eikigible below 18")
+
+    // }
+
+
+    //Vote Eligibilty
+
+    // let VoteAge = 18
+
+    // if(VoteAge >= 18){
+    //      document.write("YOu have right to vote")
+
+    // }else{
+
+    //     alert("Not Eligible")
+    // }
+
+
+    //Else - If :It is used to check Mutiple Condition at the sam time
+
+    let temp = 18
+
+    if(temp>=30){
+        alert('It is Sunny Day')
+    }
+    else if(temp>25){
+        alert('It is warm outside')
+    }
+    else if(temp>20){
+        alert('It is nice day')
+    }
+    else{
+        alert('It is Cold Outside')
+    }
+
+
+
+
+   </script>
+ </body>
+</html>
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+     //Switch - keyword help us to check mutilple condition or changing 
+
+     let day = 7
+
+     switch(day){
+
+        case 1:
+            console.log("Monday")
+             break
+
+        case 2:
+            console.log("Tuesday")  
+             break 
+            
+        case 3:
+            console.log("Wednmesday") 
+             break 
+            
+        case 4:
+            console.log("Thursday")
+             break    
+
+        case 5:
+            console.log("Friday")
+            break
+            
+        case 6:
+            console.log("Saturday")
+             break
+            
+        case 7:
+            console.log("Sunday") 
+             break   
+
+        default:
+            console.log("Invalid Choice")     
+
+     }
+
+
+
+    </script>
+</body>
+</html>
