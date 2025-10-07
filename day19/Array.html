@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Array - It Stores Mutiple of different of Data types
+
+        var fruits = [ "Apple" , "Mango" ,"Watermelon" ]
+
+        //Length-Number of Data
+
+        console.log(fruits.length)
+
+
+        //Add Data 
+        //1.Push("New value") - Add the data at the last
+        fruits.push("Orange")
+
+
+        //unshift("New Value") - Add the data at the beginning/first
+        fruits.unshift("Kiwi")
+
+
+        //Remove The data
+        //2. pop()  - Remove the data from last
+        fruits.pop()
+
+        //shift() - Remove the data from start
+        fruits.shift()
+
+
+        //Splice() - Add the data in your specific position
+        //spice(indexNo, 0(Keep the previous data) or  1 (Replace with previous data) ,"New Value") 
+
+        fruits.splice(1,1,"Banana")
+
+        console.log(fruits)
+
+    </script>
+</body>
+</html>

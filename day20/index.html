@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+    //Task : Online Lib Sytem
+
+    //class - keyword book - className
+
+    class book{   //Blueprint
+
+             constructor(title,author,yearPublished){  //common Prop
+                   this.title = title                    //this
+                   this.author = author
+                   this.yearPublished = yearPublished
+             }
+
+             //Method- To do Task
+             getSummary(){
+                return 'The Title is ' + this.title + 'Author Name is' + this.author + 'Year Published ' + this.yearPublished 
+             }
+
+             addition(){
+                return 'Hii'
+             }
+
+    }
+
+    //We need Obbject - It is use to call and access the class and its method
+
+    // const .var , let ObjectName = new className
+
+    const book1 = new book("Haryy Potter", 'ABC',1987)
+
+    const book2 = new book('Snow White','Xyz',1999)
+
+   //ObjectName.MethodName
+    console.log(book1.getSummary())
+
+   
+
+
+
+
+
+
+    </script>
+</body>
+</html>

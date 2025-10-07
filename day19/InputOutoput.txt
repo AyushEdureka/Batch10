@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+     //Input: Data from user
+
+     //A. prompt('Question')
+     
+    //  var username    =  prompt('Enter your Name?')
+
+    //  console.log(username)
+
+    //  document.write(username)
+
+    
+    //B. Confirm('Message') - Yes or No
+
+    confirm('Are You Sure')
+
+
+     </script>   
+</body>
+</html>
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="myFun()">Register</button>
+
+    <script>
+        
+        function myFun(){
+        
+            var username = prompt('Enter Your Name')
+
+            document.write('The UserName is : '  +  username)
+
+
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+   
+   //Math Object - Random No Between 1 to 6
+
+   let luckyNo =    Math.floor(Math.random()*6)+1
+                                //    *6 Limit To get random , +1 Strts with 1
+
+    //console.log(luckyNo)
+
+    while(true){
+
+        guess = prompt('Enter Number from 1 to 6!')
+
+
+      if(luckyNo == guess  ){
+        alert('You Won')
+        break;
+      }else{
+        alert('Better Luck Next Time')
+      }
+      
+
+    }
+     
+  
+
+
+    </script>
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="MyH">Hello Learners</h1>
+
+    <h1>Amazon</h1>
+
+    <button onclick="myFun()">Click Me to Change</button>
+
+    <script>
+
+    function myFun(){
+
+       //ConnectWithIDWithTag/Element
+
+       const abc = document.getElementById("MyH")
+       
+
+      //InnerHtml- Change The content
+        abc.innerHTML = 'Welcome Everyone To Js'
+
+    }
+
+
+    </script>
+</body>
+</html>
