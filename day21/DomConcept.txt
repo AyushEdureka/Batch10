@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="myID">Hello guys</p> 
+
+    <div class="myclass">This is Div - 0</div>
+    <div class="myclass">This is Div - 1</div>
+
+    <p>Para - 1</p>
+    <p>Para  -2</p>
+
+    <div class="box">Box - 0</div>
+    <div class="box">Box - 1</div>
+
+    <script>
+        //Select Element/Tag From HTML
+
+        //1.getElementbyID()
+
+    const ele =  document.getElementById("myID")  //Paragrph Tag Selected
+    console.log(ele)
+    console.log(ele.textContent)
+
+    //2.By ClassName
+
+    const abc = document.getElementsByClassName("myclass")
+    console.log(abc)
+    console.log(abc[1].textContent)
+
+    //3 . TagName
+              
+    const xyz  =  document.getElementsByTagName("p")
+    console.log(xyz)
+    console.log(xyz[1].textContent)
+
+
+    //QuerySelector - Follow thr Rules of CSS Selector - #IDNAME , .ClassName
+
+    const pqr = document.querySelector(".box")
+    console.log(pqr)
+
+    const ele2 = document.querySelectorAll(".box")
+    console.log(ele2)
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <p id="text">Hii Everyone</p>
+
+    <script>
+        const ele = document.getElementById("text")
+        ele.textContent = "Hello Everyone How are you?"
+    </script> -->
+
+
+    <!-- <div id="myText">This is a Div</div>
+
+    <script>
+        const ele1 = document.getElementById("myText")
+
+        ele1.innerHTML = "<h3>This is Now Heading</h3>"
+    </script> -->
+
+
+    <p id="myId">Old Dull Text</p>
+
+    <script>
+        const ele2 = document.getElementById("myId")
+        ele2.style.color= "white"
+        ele2.style.backgroundColor="red"
+        ele2.textContent= "Hii I am a new Paragraph"
+    </script>
+
+
+
+</body>
+</html>
