@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #slider{
+            position: relative;
+            width: 90%;
+            height: 80vh;
+            overflow: hidden;
+            margin: auto;
+        }
+
+        .slide{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+        }
+
+        .slide.active{
+            opacity: 1;
+        }
+
+        .slide img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .controls{
+            position: absolute;
+            bottom: 15px;
+            right: 10px;
+            display: flex;
+            align-items: center;
+            gap: 25px;
+            color: #000;
+            font-size: 1rem;
+        }
+
+        .controls button{
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.8rem;
+            cursor: pointer;
+            
+        }
+
+        .controls span{
+            color:chartreuse;
+            font-size:1.7rem;
+        }
+    </style>
+</head>
+<body>
+    <section id="slider">
+
+      <div class="slide active">
+        <img src="https://images.pexels.com/photos/2385477/pexels-photo-2385477.jpeg">
+      </div>
+     
+      <div class="slide">
+        <img src="https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg">
+      </div>
+
+      <div class="slide ">
+        <img src="https://images.pexels.com/photos/3184416/pexels-photo-3184416.jpeg">
+      </div>
+
+     <div class="slide">
+        <img src="https://images.pexels.com/photos/276514/pexels-photo-276514.jpeg">
+      </div>
+
+      <div class="controls">
+         <button id="prev">&#10094;</button>
+         <span id="indicator">1 of 5</span>
+         <button id="next">&#10095;</button>
+      </div>
+
+    </section>
+
+    <script>
+        const slides = document.querySelectorAll(".slide")
+        const prev = document.getElementById("prev")
+        const next = document.getElementById("next")
+        const indicator = document.getElementById("indicator")
+        
+        let index=0
+
+        function ShowList(i){
+           slides.forEach(slide => slide.classList.remove("active"))
+
+           slides[i].classList.add("active");
+           indicator.textContent = ` ${i+1} of ${slides.length} `
+        }
+
+        next.addEventListener("click",()=>{
+               index = (index+1) % slides.length
+               ShowList(index)
+        })
+
+         prev.addEventListener("click",()=>{
+               index = (index-1 + slides.length) % slides.length
+               ShowList(index)
+        })
+
+        // setInterval(()=>{
+        //      index=(index+1) % slides.length
+        //      ShowList(index)
+        // },5000)
+
+    </script>
+</body>
+</html>
