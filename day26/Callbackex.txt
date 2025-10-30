@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Task 1 - 10 sec
+        function Sanwhich(){
+            console.log("Step 1 : Bread")
+            console.log("Step 2 : Butter")
+            console.log("Step 3 : Toppinmgs")
+            console.log("Step 4 : AnotherBread")
+        }
+        Sanwhich()
+
+       //Task 2  - 2sec
+       function DoHomewrork(subject){
+        console.log(`Homework for ${subject}`)
+       }
+       DoHomewrork("Math")
+    </script>
+</body>
+</html>
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Task 1: Make a coffee
+         function startTask(){
+            console.log("Step 1: Boil the water(5 sec)")
+
+            setTimeout(()=>{
+                console.log("Step 2 : water is ready")
+            },5000)
+
+            console.log("Step 3 :Doing Other task as well")
+         }
+         startTask()
+
+         function secondTask(){
+            console.log("Hii Everyone")
+         }
+         secondTask()
+    </script>
+</body>
+</html>
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //CallBack - Callback is a function AND It is passed as Parameter into Another Funtion
+
+        function DoHomeWork(subject,callback){
+            console.log(`Doing Homwork for ${subject}`)
+
+         callback()   
+        }
+
+        DoHomeWork("Math",function(){
+            console.log("Homework Done")
+        })
+
+    </script>
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function greet(name,callback){
+
+            console.log(`Hii ${name} How are you doing?`)
+
+            callback()  //Callinmg the callback function
+
+        }
+        greet("Aprrova",function(){
+            console.log("Callback function is called")
+        })
+    </script>
+</body>
+</html>

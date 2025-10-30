@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //1.Cookie will small amount of data
+        //2. Cookie have expiry : Delete after expiry - temporary
+        // document.cookie - syntax
+
+        document.cookie= "username=Lokesh;expires=Wed ,29 Oct 2025 00:00:00 UTC;"
+
+        document.cookie= "email=Lokesh@gmail.com;expires=Mon,27 Oct 2025 00:00:00 UTC;"
+    </script>
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //LocalStorage - Act likes Permanment Storage
+
+    // localStorage.setItem(key,value)
+
+    localStorage.setItem ("Cart","Productss")
+    
+
+    localStorage.removeItem("Cart" )
+
+    
+
+
+    </script>
+</body>
+</html>
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+ <script >
+
+ //Session Storage : Data Will store till the session is active
+
+ sessionStorage.setItem("Greetings","Hello")
+
+ 
+
+ </script>
+
+
+
+</body>
+</html>
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+// setTimeout(()=>{
+
+// },time)  1000 - 1sec
+
+
+setTimeout(()=>{
+    alert("Hii")
+},10000)
+
+
+    </script>
+</body>
+</html>

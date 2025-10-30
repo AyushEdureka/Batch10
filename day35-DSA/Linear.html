@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+   //1. Array : can store mutiple data of diff data types in js
+   //Index no starts with 0
+   //lenght = No of data
+   //arrayName[indexno] = value
+
+   let inventory = ["laptop","iphone","headphones","shoes"]
+   console.log(inventory.length)
+   console.log(inventory[2])
+
+
+   //2.Object : Collection of Data
+   //key:value pair
+
+   let customer = {
+    name:"john",
+    email:"j@gmail.com",
+    phone:543535
+   }
+   console.log(customer.email)
+
+
+
+   //3.Stack- LIFO
+
+   let plate = []  //Stack is empty
+
+   //How to add data in stack
+   plate.push("Plate 1")
+   plate.push("plate 2")
+   plate.push("plate 3")
+
+   console.log(plate)
+
+   //LIFO - Last in first out
+   console.log(plate.pop())
+   console.log(plate.pop())
+
+
+   let browserHistory = []
+
+   browserHistory.push("Insta")
+   browserHistory.push("Youtunbr")
+   browserHistory.push("Netflix")
+
+   //LIFO-
+
+   console.log(browserHistory.pop())
+
+
+
+
+   //QUEUE - FIFO
+
+   let counterLine = []
+
+counterLine.push("JOhn")
+counterLine.push("Bob")
+counterLine.push("Charlie")
+counterLine.push("mark")
+counterLine.push("Lokesh")
+
+//FIFO
+
+ console.log(counterLine.shift())
+ console.log(counterLine.shift())
+
+
+
+
+
+     </script>   
+</body>
+</html>
