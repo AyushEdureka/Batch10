@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         class HashTable{
+
+                    constructor(){
+                        this.table = new Array(127)
+                        this.size = 0
+                    }
+
+                    //Hash Fucntion to find the shelf
+                    _hash(key){
+                        let hash = 0
+                        for(let i=0; i < key.length; i++){
+                               hash +=  key.charCodeAt(i)
+                        }
+                        return hash % this.table.length
+                    }
+
+                    //Add a Book to Libray
+                    set(key , value){
+                        const index = this._hash(key)
+                        this.table[index] = [key,value]
+                        this.size++
+                    }
+
+                    //Find a Book in Lib
+                    get(key){
+                        const index = this._hash(key)
+                        return this.table[index]
+                    }
+         }
+
+
+         const myMusicLibray = new HashTable()
+
+         myMusicLibray.set('Blinding Lighst', 'The Weekend')
+         myMusicLibray.set('Shape of you','Ed Shreean')
+         myMusicLibray.set('Mary','abcd')
+         myMusicLibray.set('Myra','xyz1')
+         myMusicLibray.set('Xyz Name','Abc Author')
+
+         console.log(myMusicLibray.get('Shape of you'))
+
+    console.log(myMusicLibray)
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+//STEP 1 : import the ALL modules Which you require in your Backend Setup
+const http  =   require('http')  //Build In Module : No Need for installation
+
+//2.CREATING WEB SERVER/BACKEND
+//Backend - Req,Res
+
+http.createServer((request,response)=>{
+
+response.write('Hello guys This is you backend speaking How are you')
+
+response.end()
+
+}).listen(3000)
+
+console.log('Server Running at http://localhost:3000')

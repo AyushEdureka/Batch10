@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: 'Poppins' ,sans-serif;
+            background: linear-gradient(135deg,#89f7fe,#66a6ff);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container{
+            background: #fff;
+             padding: 25px;
+             border-radius: 15px;
+             width: 380px;
+             box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+             text-align: center;
+        }
+
+        h1{
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .input-section{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+        }
+
+        input{
+            flex: 1;
+            padding: 8px;
+            border: 2px solid #ccc;
+            border-radius: 8px;
+            margin-right: 8px;
+        }
+
+        button{
+            padding: 8px 10px;
+            border: none;
+            background-color: #4b6cb7;
+            color: white;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 12px;
+            transition: background-color 0.3s;
+            margin-bottom: 5px;
+        }
+        button:hover{
+            background-color: #395591;
+        }
+
+        ul{
+            list-style: none;
+            padding: 0;
+        }
+
+        li{
+            background: #f8f9fa;
+            margin: 6px 0;
+            padding: 8px 10px;
+            border-radius: 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        li span{
+            font-size: 14px;
+            color: #333;
+        }
+
+        .delete-btn{
+            background: crimson;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            padding: 3px 6px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>My To-Do-List</h1>
+
+       <div class="input-section">
+        <input type="text" id="taskInput" placeholder="Enter a new task...">
+        <button id="addBtn">Add Task(push)</button>
+       </div>
+
+      <button id="removeLast">Remove Last (pop)</button>       
+      <button id="addStart">Add at start(unshift)</button>
+      <button id="removeFirst">Remove First(shift)</button>
+      <button id="replaceTask">Replace Task(splice)</button>
+      <button id="uppercaseTasks">Uppercase All(map)</button>
+      <button id="findTask">Find Task</button>
+      <button id="filterTasks">Filter Tasks</button>
+
+      <ul id="taskList"></ul>
+
+    </div>
+    <script>
+        let tasks = ["Buy grocies","Finish Project","Clean room"]
+
+        //Display all Tasks
+        function displayTasks(tasksArray=tasks){
+          
+            const list = document.getElementById("taskList");
+            list.innerHTML = ""
+
+            //forEach 
+            tasksArray.forEach(function(task,index){
+                const li = document.createElement("li")
+                li.innerHTML = `<span>${index + 1}. ${task} </span>
+                <button class="delete-btn" onclick="deleteTask(${index})">❌</button>
+                `;
+                list.appendChild(li)
+
+               
+            });
+
+        }
+        
+
+        //delee task using splice()
+        function deleteTask(index){
+            tasks.splice(index,1);
+            displayTasks();
+        }
+
+       //Add new Task (push)
+       document.getElementById("addBtn").onclick = function(){
+        let newTask = document.getElementById("taskInput").value.trim()
+
+        if(newTask){
+            tasks.push(newTask)
+            document.getElementById("taskInput").value = ""
+            displayTasks();
+        }else{
+            alert("Please enter a task!")
+        }
+       }
+
+       //Remove last data
+       document.getElementById("removeLast").onclick = function(){
+        tasks.pop()
+        displayTasks()
+       }
+
+       //Add task at start
+       document.getElementById("addStart").onclick = function(){
+        let newTask = prompt("Enter a task to add at start")
+        if(newTask){
+            tasks.unshift(newTask)
+            displayTasks()
+        }
+       }
+
+
+       //Remove first data
+        document.getElementById("removeFirst").onclick = function(){
+        tasks.shift()
+        displayTasks()
+       }
+
+
+       //Taskfrom all tasks (map)
+       document.getElementById("uppercaseTasks").onclick = function(){
+        tasks = tasks.map(task => task.toUpperCase())
+        displayTasks()
+       }
+
+
+       //Find a task
+       document.getElementById("findTask").onclick = function(){
+        let keyword = prompt("Enter word to find in tasks :")
+        let found = tasks.find(task => task.toLowerCase().includes(keyword.toLowerCase()))
+
+        if(found){
+            alert("Found Task : " + found)
+        }else{
+            alert("No Matching task found!")
+        }
+       }
+
+       //Filter task(tasks)
+
+       document.getElementById("filterTasks").onclick = function(){
+        let filtered = tasks.filter(task => task.length > 5)
+        displayTasks(filtered)
+       };
+
+
+       //Initial
+       displayTasks()
+    </script>
+</body>
+</html>

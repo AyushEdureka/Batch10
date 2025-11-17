@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Seqential or Linear - Go to each data/ele in array and find the target
+        //Note : travel inside we use for loop
+
+        function sequentail(arr,target){
+
+            for(let i=0; i < arr.length; i++){
+         
+               if(arr[i] === target){
+                     return "The Data found at index no  " + i
+               }
+
+            }
+
+            return "Data not found"
+
+        }
+
+        let books = ["math" , "sci" , "history" , "english"]
+        let targetBook = "sci"
+
+        let index = sequentail(books,targetBook)
+
+        console.log(index)
+
+
+
+        // let heights = [160,150,172,155,178,182]
+
+        // let minHeight = heights[0];
+        // let maxHeight = heights[0];
+
+        // for (let i = 1; i < heights.length; i++){
+          
+        //     if(heights[i] < minHeight){
+        //         minHeight = heights[i]
+        //     }
+
+        //     if(heights[i] > maxHeight){
+        //         maxHeight = heights[i]
+        //     }
+
+        // }
+
+        // console.log("Shortest height " + minHeight)
+        // console.log("Tallest height " + maxHeight)
+
+
+        //2nd way - Inbuilt methods given Js
+
+          let heights = [160,150,172,155,178,182]
+
+          let minHeight = Math.min(...heights)
+
+          let maxHeight = Math.max(...heights)
+
+          console.log(minHeight)
+          console.log(maxHeight)
+
+
+    </script>
+</body>
+</html>

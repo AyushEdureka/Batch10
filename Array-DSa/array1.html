@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      //To Do List Application Logic with Array
+
+      let tasks = []
+
+      tasks = ["Buy Grocies","Workout","Cleaning","office","Coffe","clean car"]
+      //No of Data - 5
+
+      console.log(tasks.length)
+      let lastIndex = tasks.length - 1
+      console.log(lastIndex)
+
+      //Adding Data inside
+      //1.Add or Insert data at the end of Array
+      tasks.push("Walk with Dog")
+
+      //2.Add or insert at begininng of array
+      tasks.unshift("Meditation")
+
+
+      //Remove or Delete the data from aaray
+      //1.pop - at the end
+      tasks.pop()
+
+      //2.shift- Begining 
+      tasks.shift()
+
+      //console.log(tasks)
+
+      //Slice - It will cut the Array in your desired parts
+      let firstThreeData = tasks.slice(0,3)
+   //   console.log(firstThreeData)
+
+      let newArray = tasks.slice(1,3)
+    //  console.log(newArray)
+
+
+      // SPLICE - Add the data at the Specific Position
+      // 0 - It will Keep the Previous data
+      // 1 - it will replcae the previosu data
+
+      tasks.splice(4,0,"Walk")
+
+      tasks.splice(3,1,"Play Football")
+
+      console.log(tasks)
+
+      //forEach Loop - gets the access of indiviual data of array
+      tasks.forEach(function(someVarible){
+
+          console.log(someVarible + "  done")
+      })
+
+     //Map - Create a new Array by Transforming each item/data in the Original Arra
+
+    //  let importantTask = tasks.map(function(abc){
+          
+    //     return "Important " + abc
+
+    //  })
+    //  console.log(importantTask)
+
+
+     let importantTask = tasks.map(function(abc,index){
+        if(index === 0){  //Marking The first data at index no 0
+            return "Important " + abc
+        }
+        return abc
+     })
+     console.log(importantTask)
+
+
+     //Filter : Create New Array and Filter it
+
+     let newTask = tasks.filter(function(xyz){
+        return   xyz.includes("o")
+     })
+     console.log(newTask)
+
+     //Find : Find the First Item
+     let findItem = tasks.find(function(pqr){
+        return pqr.includes("o")
+     })
+     console.log(findItem)
+     </script>   
+</body>
+</html>

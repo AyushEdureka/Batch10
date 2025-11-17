@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+     
+        
+        arr= [1,2,3,4,5,6,7,8,9,10]
+        n = arr.length  - 1   //Last Index at varibale n
+        s = 10
+
+         function BinarySearch(arr,s){
+
+            //Midpoint 
+            let start = 0
+            let end =   n
+            while(start<=end){
+                let middle = Math.floor((start+end)/2)   //middle (0 + 9)/2 = 4
+
+                if(arr[middle] === s){
+                    return 'At Index no ' + middle + " Data found"
+                }else if(s > arr[middle]){
+                    start = middle + 1
+                }else{
+                    end = middle-1
+                }
+
+            }
+
+            return "Data not found..."
+
+        }
+
+        result = BinarySearch(arr,s)
+
+        console.log(result)
+        </script>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let x=1 
+
+        function recusrion(x){
+          console.log(x)
+
+          if(x==8){
+            return;
+          }
+
+          recusrion(x+1) 
+
+        }
+        recusrion(x)
+
+
+
+
+
+        setTimeout(()=>{
+            console.log("Start")
+        },0)
+
+        setTimeout(()=>{
+            console.log("Middle")
+        })
+
+        setTimeout(()=>{
+            console.log("End")
+        },0)
+    </script>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let string = "Pooter"  //last index = 3
+
+        let revstring = ""
+
+        for(let i = string.length - 1;  i>=0 ; i--){
+            revstring+= string[i]
+            //revstring+= L;
+            //L+=         M;
+            //LM+=        T
+            //LMT+=        H
+            //LMTH+=
+        }
+
+        console.log('Original String ' + string)
+        console.log('Revsered String ' + revstring)
+    </script>
+</body>
+</html>

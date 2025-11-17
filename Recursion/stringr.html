@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let string = "Pooter"  //last index = 3
+
+        let revstring = ""
+
+        for(let i = string.length - 1;  i>=0 ; i--){
+            revstring+= string[i]
+            //revstring+= L;
+            //L+=         M;
+            //LM+=        T
+            //LMT+=        H
+            //LMTH+=
+        }
+
+        console.log('Original String ' + string)
+        console.log('Revsered String ' + revstring)
+
+
+
+
+
+      //2nd way
+      let name = "Hello"
+      let revstring2 = name.split("").reverse().join("") 
+      console.log(revstring2)
+
+
+
+
+    </script>
+</body>
+</html>

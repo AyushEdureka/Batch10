@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+//    var employee(GraphName) = {
+//    (key-Node) name:"Mark" (Value-Array)
+//    }
+
+class Graph{
+
+    constructor(){
+        this.adjacenyList = {};
+    }
+
+    addNode(node){
+         if(!this.adjacenyList[node]){
+            this.adjacenyList[node] = []
+         }
+    }
+
+    addEgde(node1,node2){
+              this.adjacenyList[node1].push(node2)      
+              this.adjacenyList[node2].push(node1)
+    }
+
+    removeEdge(node1,node2){
+        this.adjacenyList[node1] = this.adjacenyList[node1].filter(friend => friend !== node2);    
+        this.adjacenyList[node2] = this.adjacenyList[node2].filter(friend => friend !== node1);
+    }
+
+}
+
+
+//Example usage
+const socialnetwork = new Graph()
+
+socialnetwork.addNode("Alice")
+socialnetwork.addNode("Bob")
+socialnetwork.addNode("Charlie")
+
+socialnetwork.addEgde("Alice","Bob")
+socialnetwork.addEgde("Alice","Charlie")
+socialnetwork.addEgde("Bob","Charlie")
+
+socialnetwork.removeEdge("Alice","Charlie")
+
+
+console.log(socialnetwork)
+
+
+    </script>    
+</body>
+</html>

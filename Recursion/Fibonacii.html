@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function fibonaaci(num){
+            if(num<2){
+                return num
+            }else{
+                return fibonaaci(num-1) + fibonaaci(num-2)
+            }
+        }
+
+        let n = Number(prompt("Enter The limit"))
+
+        if(n<=0){
+            alert("Please Enter positive Integer")
+        }else if(n==1){
+            console.log(1,2)
+        }else{
+            for(let i=0; i < n;i++){
+                console.log(fibonaaci(i))
+            }
+        }
+    </script>
+</body>
+</html>
